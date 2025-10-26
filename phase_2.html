@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>phase_2</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="phase_2_files/libs/clipboard/clipboard.min.js"></script>
+<script src="phase_2_files/libs/quarto-html/quarto.js"></script>
+<script src="phase_2_files/libs/quarto-html/popper.min.js"></script>
+<script src="phase_2_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="phase_2_files/libs/quarto-html/anchor.min.js"></script>
+<link href="phase_2_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="phase_2_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="phase_2_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="phase_2_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="phase_2_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<p>Here’s a draft for answering the background information questions on your cardiovascular disease (CVD) topic. Each point is addressed according to the requirements outlined:</p>
+<section id="a-why-is-your-research-question-important-0.5-points" class="level3">
+<h3 class="anchored" data-anchor-id="a-why-is-your-research-question-important-0.5-points">a) Why is your research question important? (0.5 points)</h3>
+<p>Cardiovascular disease (CVD) is the leading cause of mortality worldwide, accounting for a significant percentage of global deaths. Understanding the factors contributing to CVD, especially modifiable risk factors, is crucial for public health interventions and policy development. By exploring how these factors vary by age, gender, and other demographic aspects, healthcare professionals can develop targeted strategies to prevent and manage CVD, ultimately reducing the burden on healthcare systems and improving patient outcomes.</p>
+</section>
+<section id="b-are-there-any-existing-studies-done-before-for-the-same-research-question-0.5-points" class="level3">
+<h3 class="anchored" data-anchor-id="b-are-there-any-existing-studies-done-before-for-the-same-research-question-0.5-points">b) Are there any existing studies done before for the same research question? (0.5 points)</h3>
+<p>Yes, numerous studies have explored risk factors for cardiovascular disease, focusing on aspects like age, gender, cholesterol levels, smoking, and physical activity. Landmark studies such as the Framingham Heart Study and INTERHEART have established a strong foundation in understanding these factors. However, many studies focus on specific age groups, ethnicities, or other distinct populations, leaving gaps in broader or cross-sectional analyses across various demographics.</p>
+</section>
+<section id="c-if-it-has-been-done-how-will-your-project-be-different-from-others-0.5-points" class="level3">
+<h3 class="anchored" data-anchor-id="c-if-it-has-been-done-how-will-your-project-be-different-from-others-0.5-points">c) If it has been done, how will your project be different from others? (0.5 points)</h3>
+<p>This project aims to examine a broader range of demographic factors, including a comprehensive set of modifiable risk factors and their variations by age, gender, and race/ethnicity. While existing studies often focus on specific variables, this project will incorporate a wider variety of factors, including social determinants of health (SDOH), allowing for a more holistic view of the factors contributing to cardiovascular disease risk. This approach offers a broader understanding of CVD trends and contributes to addressing identified gaps in existing literature.</p>
+</section>
+<section id="d-which-health-data-source-do-you-plan-to-use-0.75-points" class="level3">
+<h3 class="anchored" data-anchor-id="d-which-health-data-source-do-you-plan-to-use-0.75-points">d) Which health data source do you plan to use? (0.75 points)</h3>
+<p>The dataset used for this project contains real-world healthcare data with various health metrics and social determinants of health (SDOH). It includes patient information such as age, gender, height, weight, blood pressure, cholesterol, glucose levels, smoking, alcohol consumption, physical activity, family history of cardiovascular disease, and diabetes status. This dataset provides a comprehensive view of the factors that influence cardiovascular disease risk and is suitable for exploring the research question from different perspectives.</p>
+</section>
+<section id="e-what-is-the-dependent-variable-0.5-points" class="level3">
+<h3 class="anchored" data-anchor-id="e-what-is-the-dependent-variable-0.5-points">e) What is the dependent variable? (0.5 points)</h3>
+<p>The dependent variable for this project is “cardio,” representing the presence or absence of cardiovascular disease. It is a binary variable, with 0 indicating the absence of CVD and 1 indicating the presence of CVD.</p>
+</section>
+<section id="f-what-are-the-independent-variables-why-did-you-choose-these-from-the-dataset-0.75-points" class="level3">
+<h3 class="anchored" data-anchor-id="f-what-are-the-independent-variables-why-did-you-choose-these-from-the-dataset-0.75-points">f) What are the independent variables? Why did you choose these from the dataset? (0.75 points)</h3>
+<p>The independent variables for this project are age, gender, height, weight, blood pressure (systolic and diastolic), cholesterol, glucose, smoking, alcohol consumption, physical activity, BMI, family history of cardiovascular disease, and diabetes status. These variables were chosen because they are well-known modifiable risk factors for cardiovascular disease. This project aims to explore how these factors contribute to CVD risk across different demographic groups, potentially identifying new patterns or associations.</p>
+</section>
+<section id="g-what-is-the-significance-of-your-research-question-0.25-points" class="level3">
+<h3 class="anchored" data-anchor-id="g-what-is-the-significance-of-your-research-question-0.25-points">g) What is the significance of your research question? (0.25 points)</h3>
+<p>The significance of this research question lies in its potential to inform public health policies and medical practices. By understanding the relationship between various risk factors and cardiovascular disease across different demographics, healthcare professionals and policymakers can design more effective prevention strategies, early detection methods, and personalized treatment plans to reduce the burden of cardiovascular disease on individuals and healthcare systems.</p>
+</section>
+<section id="h-are-there-any-practical-implications-0.25-points" class="level3">
+<h3 class="anchored" data-anchor-id="h-are-there-any-practical-implications-0.25-points">h) Are there any practical implications? (0.25 points)</h3>
+<p>The practical implications of this research are substantial. If the study identifies significant trends or associations, it could lead to improved CVD screening protocols, more targeted health interventions, and better public health campaigns. This information could also guide healthcare providers in recommending lifestyle changes to reduce the risk of cardiovascular disease, ultimately leading to better patient outcomes and decreased healthcare costs.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Step 1: Load Libraries and Data</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Load necessary libraries</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)  <span class="co"># For data manipulation and visualization</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyverse' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyr' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'readr' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'purrr' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'forcats' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'lubridate' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.3     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.4     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Open a file dialog to select a file</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>file_path <span class="ot">&lt;-</span> <span class="fu">file.choose</span>()</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load your dataset (assume 'data.csv' is your file)</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(file_path)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Display structure and summary of data to understand its components</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   68205 obs. of  19 variables:
+ $ id                                      : int  0 1 2 3 4 8 9 12 13 14 ...
+ $ age                                     : int  18393 20228 18857 17623 17474 21914 22113 22584 17668 19834 ...
+ $ gender                                  : int  2 1 1 2 1 1 1 2 1 1 ...
+ $ height                                  : int  168 156 165 169 156 151 157 178 158 164 ...
+ $ weight                                  : num  62 85 64 82 56 67 93 95 71 68 ...
+ $ ap_hi                                   : int  110 140 130 150 100 120 130 130 110 110 ...
+ $ ap_lo                                   : int  80 90 70 100 60 80 80 90 70 60 ...
+ $ cholesterol                             : int  1 3 3 1 1 2 3 3 1 1 ...
+ $ gluc                                    : int  1 1 1 1 1 2 1 3 1 1 ...
+ $ smoke                                   : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ alco                                    : int  0 0 0 0 0 0 0 0 0 0 ...
+ $ active                                  : int  1 1 0 1 0 0 1 1 1 0 ...
+ $ cardio                                  : int  0 1 1 1 0 0 0 1 0 0 ...
+ $ age_years                               : int  50 55 51 48 47 60 60 61 48 54 ...
+ $ bmi                                     : num  22 34.9 23.5 28.7 23 ...
+ $ bp_category                             : chr  "Hypertension Stage 1" "Hypertension Stage 2" "Hypertension Stage 1" "Hypertension Stage 2" ...
+ $ bp_category_encoded                     : chr  "Hypertension Stage 1" "Hypertension Stage 2" "Hypertension Stage 1" "Hypertension Stage 2" ...
+ $ Family.history.of.cardiovascular.disease: chr  "Yes" "Yes" "Yes" "Yes" ...
+ $ Diabetes.Mellitus                       : chr  "Diabetes" "Diabetes" "Non-diabetes" "Diabetes" ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       id             age            gender          height     
+ Min.   :    0   Min.   :10798   Min.   :1.000   Min.   : 55.0  
+ 1st Qu.:24991   1st Qu.:17656   1st Qu.:1.000   1st Qu.:159.0  
+ Median :50008   Median :19700   Median :1.000   Median :165.0  
+ Mean   :49972   Mean   :19463   Mean   :1.349   Mean   :164.4  
+ 3rd Qu.:74878   3rd Qu.:21323   3rd Qu.:2.000   3rd Qu.:170.0  
+ Max.   :99999   Max.   :23713   Max.   :2.000   Max.   :250.0  
+     weight          ap_hi           ap_lo         cholesterol   
+ Min.   : 11.0   Min.   : 90.0   Min.   : 60.00   Min.   :1.000  
+ 1st Qu.: 65.0   1st Qu.:120.0   1st Qu.: 80.00   1st Qu.:1.000  
+ Median : 72.0   Median :120.0   Median : 80.00   Median :1.000  
+ Mean   : 74.1   Mean   :126.4   Mean   : 81.26   Mean   :1.363  
+ 3rd Qu.: 82.0   3rd Qu.:140.0   3rd Qu.: 90.00   3rd Qu.:1.000  
+ Max.   :200.0   Max.   :180.0   Max.   :120.00   Max.   :3.000  
+      gluc           smoke              alco             active      
+ Min.   :1.000   Min.   :0.00000   Min.   :0.00000   Min.   :0.0000  
+ 1st Qu.:1.000   1st Qu.:0.00000   1st Qu.:0.00000   1st Qu.:1.0000  
+ Median :1.000   Median :0.00000   Median :0.00000   Median :1.0000  
+ Mean   :1.225   Mean   :0.08766   Mean   :0.05313   Mean   :0.8035  
+ 3rd Qu.:1.000   3rd Qu.:0.00000   3rd Qu.:0.00000   3rd Qu.:1.0000  
+ Max.   :3.000   Max.   :1.00000   Max.   :1.00000   Max.   :1.0000  
+     cardio         age_years          bmi          bp_category       
+ Min.   :0.0000   Min.   :29.00   Min.   :  3.472   Length:68205      
+ 1st Qu.:0.0000   1st Qu.:48.00   1st Qu.: 23.875   Class :character  
+ Median :0.0000   Median :53.00   Median : 26.346   Mode  :character  
+ Mean   :0.4937   Mean   :52.82   Mean   : 27.511                     
+ 3rd Qu.:1.0000   3rd Qu.:58.00   3rd Qu.: 30.116                     
+ Max.   :1.0000   Max.   :64.00   Max.   :298.667                     
+ bp_category_encoded Family.history.of.cardiovascular.disease
+ Length:68205        Length:68205                            
+ Class :character    Class :character                        
+ Mode  :character    Mode  :character                        
+                                                             
+                                                             
+                                                             
+ Diabetes.Mellitus 
+ Length:68205      
+ Class :character  
+ Mode  :character  
+                   
+                   
+                   </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Step 2: Data Preparation and Exploration</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert categorical variables to factors</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>gender <span class="ot">&lt;-</span> <span class="fu">factor</span>(data<span class="sc">$</span>gender, <span class="at">levels =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Female"</span>, <span class="st">"Male"</span>))</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>cholesterol <span class="ot">&lt;-</span> <span class="fu">factor</span>(data<span class="sc">$</span>cholesterol, <span class="at">levels =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Normal"</span>, <span class="st">"Above Normal"</span>, <span class="st">"Well Above Normal"</span>))</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>gluc <span class="ot">&lt;-</span> <span class="fu">factor</span>(data<span class="sc">$</span>gluc, <span class="at">levels =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>), <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Normal"</span>, <span class="st">"Above Normal"</span>, <span class="st">"Well Above Normal"</span>))</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>bp_category <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(data<span class="sc">$</span>bp_category)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>Family.history.of.cardiovascular.disease <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(data<span class="sc">$</span>Family.history.of.cardiovascular.disease)</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>Diabetes.Mellitus <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(data<span class="sc">$</span>Diabetes.Mellitus)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for missing values</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(data))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Step 3: Descriptive Statistics</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Basic descriptive statistics</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       id             age           gender          height          weight     
+ Min.   :    0   Min.   :10798   Female:44427   Min.   : 55.0   Min.   : 11.0  
+ 1st Qu.:24991   1st Qu.:17656   Male  :23778   1st Qu.:159.0   1st Qu.: 65.0  
+ Median :50008   Median :19700                  Median :165.0   Median : 72.0  
+ Mean   :49972   Mean   :19463                  Mean   :164.4   Mean   : 74.1  
+ 3rd Qu.:74878   3rd Qu.:21323                  3rd Qu.:170.0   3rd Qu.: 82.0  
+ Max.   :99999   Max.   :23713                  Max.   :250.0   Max.   :200.0  
+     ap_hi           ap_lo                   cholesterol   
+ Min.   : 90.0   Min.   : 60.00   Normal           :51222  
+ 1st Qu.:120.0   1st Qu.: 80.00   Above Normal     : 9191  
+ Median :120.0   Median : 80.00   Well Above Normal: 7792  
+ Mean   :126.4   Mean   : 81.26                            
+ 3rd Qu.:140.0   3rd Qu.: 90.00                            
+ Max.   :180.0   Max.   :120.00                            
+                gluc           smoke              alco             active      
+ Normal           :58027   Min.   :0.00000   Min.   :0.00000   Min.   :0.0000  
+ Above Normal     : 4998   1st Qu.:0.00000   1st Qu.:0.00000   1st Qu.:1.0000  
+ Well Above Normal: 5180   Median :0.00000   Median :0.00000   Median :1.0000  
+                           Mean   :0.08766   Mean   :0.05313   Mean   :0.8035  
+                           3rd Qu.:0.00000   3rd Qu.:0.00000   3rd Qu.:1.0000  
+                           Max.   :1.00000   Max.   :1.00000   Max.   :1.0000  
+     cardio         age_years          bmi         
+ Min.   :0.0000   Min.   :29.00   Min.   :  3.472  
+ 1st Qu.:0.0000   1st Qu.:48.00   1st Qu.: 23.875  
+ Median :0.0000   Median :53.00   Median : 26.346  
+ Mean   :0.4937   Mean   :52.82   Mean   : 27.511  
+ 3rd Qu.:1.0000   3rd Qu.:58.00   3rd Qu.: 30.116  
+ Max.   :1.0000   Max.   :64.00   Max.   :298.667  
+               bp_category    bp_category_encoded
+ Elevated            : 3101   Length:68205       
+ Hypertension Stage 1:39750   Class :character   
+ Hypertension Stage 2:15937   Mode  :character   
+ Normal              : 9417                      
+                                                 
+                                                 
+ Family.history.of.cardiovascular.disease    Diabetes.Mellitus
+ No :41332                                Diabetes    :35968  
+ yes: 1127                                Non-diabetes:32237  
+ Yes:25746                                                    
+                                                              
+                                                              
+                                                              </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Frequency tables for categorical variables</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>gender_table <span class="ot">&lt;-</span> <span class="fu">table</span>(data<span class="sc">$</span>gender)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>cholesterol_table <span class="ot">&lt;-</span> <span class="fu">table</span>(data<span class="sc">$</span>cholesterol)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>gluc_table <span class="ot">&lt;-</span> <span class="fu">table</span>(data<span class="sc">$</span>gluc)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualization: Age distribution</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> age_years)) <span class="sc">+</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">5</span>, <span class="at">fill =</span> <span class="st">"skyblue"</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Age Distribution"</span>, <span class="at">x =</span> <span class="st">"Age (Years)"</span>, <span class="at">y =</span> <span class="st">"Count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="phase_2_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualization: Bar plot for gender distribution</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> gender)) <span class="sc">+</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"orange"</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Gender Distribution"</span>, <span class="at">x =</span> <span class="st">"Gender"</span>, <span class="at">y =</span> <span class="st">"Count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="phase_2_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter plot to visualize potential correlations</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> age_years, <span class="at">y =</span> bmi)) <span class="sc">+</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"BMI vs. Age"</span>, <span class="at">x =</span> <span class="st">"Age (Years)"</span>, <span class="at">y =</span> <span class="st">"BMI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="phase_2_files/figure-html/unnamed-chunk-3-3.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Step 4: Explore Relationships and Run Statistical Tests</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Correlation matrix for numeric variables</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>numeric_vars <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"age_years"</span>, <span class="st">"bmi"</span>, <span class="st">"ap_hi"</span>, <span class="st">"ap_lo"</span>)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>cor_matrix <span class="ot">&lt;-</span> <span class="fu">cor</span>(data[, numeric_vars])</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(cor_matrix)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           age_years        bmi     ap_hi     ap_lo
+age_years 1.00000000 0.08577104 0.2113136 0.1557770
+bmi       0.08577104 1.00000000 0.2301632 0.2069436
+ap_hi     0.21131364 0.23016315 1.0000000 0.7318124
+ap_lo     0.15577704 0.20694357 0.7318124 1.0000000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Logistic regression to predict cardiovascular disease</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>logistic_model <span class="ot">&lt;-</span> <span class="fu">glm</span>(cardio <span class="sc">~</span> age_years <span class="sc">+</span> gender <span class="sc">+</span> cholesterol <span class="sc">+</span> gluc <span class="sc">+</span> smoke <span class="sc">+</span> alco <span class="sc">+</span> active <span class="sc">+</span> bmi <span class="sc">+</span> Family.history.of.cardiovascular.disease <span class="sc">+</span> Diabetes.Mellitus,</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>                      <span class="at">data =</span> data, <span class="at">family =</span> <span class="st">"binomial"</span>)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(logistic_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = cardio ~ age_years + gender + cholesterol + gluc + 
+    smoke + alco + active + bmi + Family.history.of.cardiovascular.disease + 
+    Diabetes.Mellitus, family = "binomial", data = data)
+
+Coefficients:
+                                             Estimate Std. Error z value
+(Intercept)                                 -5.111774   0.082388 -62.045
+age_years                                    0.065155   0.001249  52.148
+genderMale                                   0.176546   0.018238   9.680
+cholesterolAbove Normal                      0.544448   0.024878  21.885
+cholesterolWell Above Normal                 1.314579   0.033532  39.204
+glucAbove Normal                             0.091162   0.033025   2.760
+glucWell Above Normal                       -0.359167   0.037129  -9.674
+smoke                                       -0.097319   0.032116  -3.030
+alco                                        -0.137586   0.038981  -3.530
+active                                      -0.198528   0.020466  -9.701
+bmi                                          0.056742   0.001651  34.366
+Family.history.of.cardiovascular.diseaseyes  0.022427   0.064319   0.349
+Family.history.of.cardiovascular.diseaseYes -0.012189   0.016899  -0.721
+Diabetes.MellitusNon-diabetes                0.026034   0.016337   1.594
+                                            Pr(&gt;|z|)    
+(Intercept)                                  &lt; 2e-16 ***
+age_years                                    &lt; 2e-16 ***
+genderMale                                   &lt; 2e-16 ***
+cholesterolAbove Normal                      &lt; 2e-16 ***
+cholesterolWell Above Normal                 &lt; 2e-16 ***
+glucAbove Normal                            0.005773 ** 
+glucWell Above Normal                        &lt; 2e-16 ***
+smoke                                       0.002444 ** 
+alco                                        0.000416 ***
+active                                       &lt; 2e-16 ***
+bmi                                          &lt; 2e-16 ***
+Family.history.of.cardiovascular.diseaseyes 0.727324    
+Family.history.of.cardiovascular.diseaseYes 0.470736    
+Diabetes.MellitusNon-diabetes               0.111037    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 94541  on 68204  degrees of freedom
+Residual deviance: 86437  on 68191  degrees of freedom
+AIC: 86465
+
+Number of Fisher Scoring iterations: 4</code></pre>
+</div>
+</div>
+</section>
+<section id="a.-descriptive-statistics" class="level1">
+<h1>3 a. Descriptive Statistics</h1>
+<p>Descriptive statistics summarize the data to give a general overview. This includes measures of central tendency (mean, median), dispersion (standard deviation, range), and frequency counts for categorical variables.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load required libraries</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)  <span class="co"># For descriptive statistics</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'psych' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'psych'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:ggplot2':
+
+    %+%, alpha</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Summary statistics for numeric variables</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       id             age           gender          height          weight     
+ Min.   :    0   Min.   :10798   Female:44427   Min.   : 55.0   Min.   : 11.0  
+ 1st Qu.:24991   1st Qu.:17656   Male  :23778   1st Qu.:159.0   1st Qu.: 65.0  
+ Median :50008   Median :19700                  Median :165.0   Median : 72.0  
+ Mean   :49972   Mean   :19463                  Mean   :164.4   Mean   : 74.1  
+ 3rd Qu.:74878   3rd Qu.:21323                  3rd Qu.:170.0   3rd Qu.: 82.0  
+ Max.   :99999   Max.   :23713                  Max.   :250.0   Max.   :200.0  
+     ap_hi           ap_lo                   cholesterol   
+ Min.   : 90.0   Min.   : 60.00   Normal           :51222  
+ 1st Qu.:120.0   1st Qu.: 80.00   Above Normal     : 9191  
+ Median :120.0   Median : 80.00   Well Above Normal: 7792  
+ Mean   :126.4   Mean   : 81.26                            
+ 3rd Qu.:140.0   3rd Qu.: 90.00                            
+ Max.   :180.0   Max.   :120.00                            
+                gluc           smoke              alco             active      
+ Normal           :58027   Min.   :0.00000   Min.   :0.00000   Min.   :0.0000  
+ Above Normal     : 4998   1st Qu.:0.00000   1st Qu.:0.00000   1st Qu.:1.0000  
+ Well Above Normal: 5180   Median :0.00000   Median :0.00000   Median :1.0000  
+                           Mean   :0.08766   Mean   :0.05313   Mean   :0.8035  
+                           3rd Qu.:0.00000   3rd Qu.:0.00000   3rd Qu.:1.0000  
+                           Max.   :1.00000   Max.   :1.00000   Max.   :1.0000  
+     cardio         age_years          bmi         
+ Min.   :0.0000   Min.   :29.00   Min.   :  3.472  
+ 1st Qu.:0.0000   1st Qu.:48.00   1st Qu.: 23.875  
+ Median :0.0000   Median :53.00   Median : 26.346  
+ Mean   :0.4937   Mean   :52.82   Mean   : 27.511  
+ 3rd Qu.:1.0000   3rd Qu.:58.00   3rd Qu.: 30.116  
+ Max.   :1.0000   Max.   :64.00   Max.   :298.667  
+               bp_category    bp_category_encoded
+ Elevated            : 3101   Length:68205       
+ Hypertension Stage 1:39750   Class :character   
+ Hypertension Stage 2:15937   Mode  :character   
+ Normal              : 9417                      
+                                                 
+                                                 
+ Family.history.of.cardiovascular.disease    Diabetes.Mellitus
+ No :41332                                Diabetes    :35968  
+ yes: 1127                                Non-diabetes:32237  
+ Yes:25746                                                    
+                                                              
+                                                              
+                                                              </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Detailed statistics using psych package</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">describe</span>(data[<span class="fu">c</span>(<span class="st">"age_years"</span>, <span class="st">"height"</span>, <span class="st">"weight"</span>, <span class="st">"ap_hi"</span>, <span class="st">"ap_lo"</span>, <span class="st">"bmi"</span>)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          vars     n   mean    sd median trimmed   mad   min    max  range
+age_years    1 68205  52.82  6.77  53.00   53.09  7.41 29.00  64.00  35.00
+height       2 68205 164.37  8.18 165.00  164.33  7.41 55.00 250.00 195.00
+weight       3 68205  74.10 14.29  72.00   73.02 11.86 11.00 200.00 189.00
+ap_hi        4 68205 126.43 15.96 120.00  125.24 14.83 90.00 180.00  90.00
+ap_lo        5 68205  81.26  9.14  80.00   81.11  0.00 60.00 120.00  60.00
+bmi          6 68205  27.51  6.03  26.35   26.93  4.33  3.47 298.67 295.19
+           skew kurtosis   se
+age_years -0.30    -0.82 0.03
+height    -0.61     7.65 0.03
+weight     1.01     2.56 0.05
+ap_hi      0.74     0.76 0.06
+ap_lo      0.24     0.93 0.04
+bmi        7.82   230.57 0.02</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Frequency tables for categorical variables</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(data<span class="sc">$</span>gender)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Female   Male 
+ 44427  23778 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(data<span class="sc">$</span>cholesterol)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+           Normal      Above Normal Well Above Normal 
+            51222              9191              7792 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(data<span class="sc">$</span>gluc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+           Normal      Above Normal Well Above Normal 
+            58027              4998              5180 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(data<span class="sc">$</span>cardio)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    0     1 
+34533 33672 </code></pre>
+</div>
+</div>
+</section>
+<section id="b.-data-visualizations" class="level1">
+<h1>3 b. Data Visualizations</h1>
+<p>For this section, you can create several types of visualizations to represent the data. Given that histograms and scatter plots are expected, here’s an example of each along with additional visualizations.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram for age distribution</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> age_years)) <span class="sc">+</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">5</span>, <span class="at">fill =</span> <span class="st">"lightblue"</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Age Distribution"</span>, <span class="at">x =</span> <span class="st">"Age (Years)"</span>, <span class="at">y =</span> <span class="st">"Count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="phase_2_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter plot for age vs. BMI</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> age_years, <span class="at">y =</span> bmi)) <span class="sc">+</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Scatter Plot of Age vs. BMI"</span>, <span class="at">x =</span> <span class="st">"Age (Years)"</span>, <span class="at">y =</span> <span class="st">"BMI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="phase_2_files/figure-html/unnamed-chunk-6-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Box plot for BMI by gender</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> gender, <span class="at">y =</span> bmi, <span class="at">fill =</span> gender)) <span class="sc">+</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"BMI by Gender"</span>, <span class="at">x =</span> <span class="st">"Gender"</span>, <span class="at">y =</span> <span class="st">"BMI"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="phase_2_files/figure-html/unnamed-chunk-6-3.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bar plot for cholesterol levels</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> cholesterol)) <span class="sc">+</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"orange"</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Cholesterol Levels"</span>, <span class="at">x =</span> <span class="st">"Cholesterol"</span>, <span class="at">y =</span> <span class="st">"Count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="phase_2_files/figure-html/unnamed-chunk-6-4.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="c.-statistical-tests-assumptions-and-alternatives" class="level1">
+<h1>3c. Statistical Tests, Assumptions, and Alternatives</h1>
+<p>Given your goal to predict cardiovascular disease, you should consider appropriate statistical tests and their assumptions. Logistic regression is a common method for binary outcomes. Before fitting the model, check assumptions like independence, absence of multicollinearity, and linearity of the log-odds.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check correlations among numeric variables to detect multicollinearity</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>cor_matrix <span class="ot">&lt;-</span> <span class="fu">cor</span>(data[<span class="fu">c</span>(<span class="st">"age_years"</span>, <span class="st">"bmi"</span>, <span class="st">"ap_hi"</span>, <span class="st">"ap_lo"</span>)])</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(cor_matrix)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           age_years        bmi     ap_hi     ap_lo
+age_years 1.00000000 0.08577104 0.2113136 0.1557770
+bmi       0.08577104 1.00000000 0.2301632 0.2069436
+ap_hi     0.21131364 0.23016315 1.0000000 0.7318124
+ap_lo     0.15577704 0.20694357 0.7318124 1.0000000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit a logistic regression model for predicting cardiovascular disease</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>logistic_model <span class="ot">&lt;-</span> <span class="fu">glm</span>(cardio <span class="sc">~</span> age_years <span class="sc">+</span> gender <span class="sc">+</span> cholesterol <span class="sc">+</span> gluc <span class="sc">+</span> smoke <span class="sc">+</span> alco <span class="sc">+</span> active <span class="sc">+</span> bmi <span class="sc">+</span> Family.history.of.cardiovascular.disease <span class="sc">+</span> Diabetes.Mellitus,</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>                      <span class="at">data =</span> data, <span class="at">family =</span> <span class="st">"binomial"</span>)</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(logistic_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = cardio ~ age_years + gender + cholesterol + gluc + 
+    smoke + alco + active + bmi + Family.history.of.cardiovascular.disease + 
+    Diabetes.Mellitus, family = "binomial", data = data)
+
+Coefficients:
+                                             Estimate Std. Error z value
+(Intercept)                                 -5.111774   0.082388 -62.045
+age_years                                    0.065155   0.001249  52.148
+genderMale                                   0.176546   0.018238   9.680
+cholesterolAbove Normal                      0.544448   0.024878  21.885
+cholesterolWell Above Normal                 1.314579   0.033532  39.204
+glucAbove Normal                             0.091162   0.033025   2.760
+glucWell Above Normal                       -0.359167   0.037129  -9.674
+smoke                                       -0.097319   0.032116  -3.030
+alco                                        -0.137586   0.038981  -3.530
+active                                      -0.198528   0.020466  -9.701
+bmi                                          0.056742   0.001651  34.366
+Family.history.of.cardiovascular.diseaseyes  0.022427   0.064319   0.349
+Family.history.of.cardiovascular.diseaseYes -0.012189   0.016899  -0.721
+Diabetes.MellitusNon-diabetes                0.026034   0.016337   1.594
+                                            Pr(&gt;|z|)    
+(Intercept)                                  &lt; 2e-16 ***
+age_years                                    &lt; 2e-16 ***
+genderMale                                   &lt; 2e-16 ***
+cholesterolAbove Normal                      &lt; 2e-16 ***
+cholesterolWell Above Normal                 &lt; 2e-16 ***
+glucAbove Normal                            0.005773 ** 
+glucWell Above Normal                        &lt; 2e-16 ***
+smoke                                       0.002444 ** 
+alco                                        0.000416 ***
+active                                       &lt; 2e-16 ***
+bmi                                          &lt; 2e-16 ***
+Family.history.of.cardiovascular.diseaseyes 0.727324    
+Family.history.of.cardiovascular.diseaseYes 0.470736    
+Diabetes.MellitusNon-diabetes               0.111037    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 94541  on 68204  degrees of freedom
+Residual deviance: 86437  on 68191  degrees of freedom
+AIC: 86465
+
+Number of Fisher Scoring iterations: 4</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for residual patterns to identify potential issues with the model</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">residuals</span>(logistic_model))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="phase_2_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="d.-plan-for-post-hoc-analyses" class="level1">
+<h1>3 d.&nbsp;Plan for Post-Hoc Analyses</h1>
+<p>If your statistical tests yield significant results, consider post-hoc analyses to understand specific differences. For logistic regression, you might look at individual coefficients and odds ratios to determine the effect of each variable on the outcome.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute odds ratios for logistic regression</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>odds_ratios <span class="ot">&lt;-</span> <span class="fu">exp</span>(<span class="fu">coef</span>(logistic_model))</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(odds_ratios)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                                (Intercept) 
+                                0.006025383 
+                                  age_years 
+                                1.067324630 
+                                 genderMale 
+                                1.193089066 
+                    cholesterolAbove Normal 
+                                1.723656368 
+               cholesterolWell Above Normal 
+                                3.723183214 
+                           glucAbove Normal 
+                                1.095446196 
+                      glucWell Above Normal 
+                                0.698257515 
+                                      smoke 
+                                0.907266448 
+                                       alco 
+                                0.871459647 
+                                     active 
+                                0.819936593 
+                                        bmi 
+                                1.058382882 
+Family.history.of.cardiovascular.diseaseyes 
+                                1.022680533 
+Family.history.of.cardiovascular.diseaseYes 
+                                0.987885233 
+              Diabetes.MellitusNon-diabetes 
+                                1.026376330 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Confidence intervals for coefficients</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="fu">confint</span>(logistic_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Waiting for profiling to be done...</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                                                   2.5 %      97.5 %
+(Intercept)                                 -5.273530402 -4.95057098
+age_years                                    0.062709173  0.06760691
+genderMale                                   0.140806390  0.21229923
+cholesterolAbove Normal                      0.495728046  0.59324929
+cholesterolWell Above Normal                 1.249113203  1.38056366
+glucAbove Normal                             0.026475361  0.15593602
+glucWell Above Normal                       -0.432013898 -0.28646296
+smoke                                       -0.160288664 -0.03439003
+alco                                        -0.214019283 -0.06120688
+active                                      -0.238649521 -0.15842403
+bmi                                          0.053511832  0.05998408
+Family.history.of.cardiovascular.diseaseyes -0.103693413  0.14848767
+Family.history.of.cardiovascular.diseaseYes -0.045310974  0.02093135
+Diabetes.MellitusNon-diabetes               -0.005985975  0.05805593</code></pre>
+</div>
+</div>
+</section>
+<section id="e.-measuring-effect-size" class="level1">
+<h1>3 e. Measuring Effect Size</h1>
+<p>Effect size indicates the magnitude of a relationship or difference. In logistic regression, the effect size can be represented by odds ratios. In other tests like t-tests or ANOVA, common effect size metrics are Cohen’s d or eta-squared.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Odds ratios represent the effect size for logistic regression</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>odds_ratios <span class="ot">&lt;-</span> <span class="fu">exp</span>(<span class="fu">coef</span>(logistic_model))</span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute Cohen's d for t-tests (example)</span></span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(effsize)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'effsize' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'effsize'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:psych':
+
+    cohen.d</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>cohens_d_result <span class="ot">&lt;-</span> <span class="fu">cohen.d</span>(data<span class="sc">$</span>bmi, data<span class="sc">$</span>gender)</span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(cohens_d_result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Cohen's d
+
+d estimate: 0.2034748 (small)
+95 percent confidence interval:
+    lower     upper 
+0.1876889 0.2192608 </code></pre>
+</div>
+</div>
+</section>
+<section id="f.-appropriate-model-linearlogistic" class="level1">
+<h1>3 f.&nbsp;Appropriate Model (Linear/Logistic)</h1>
+<p>Given your binary outcome, logistic regression is the most appropriate model. However, if you’re analyzing relationships among continuous variables, linear regression might be more suitable.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Logistic regression for binary outcomes</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>logistic_model <span class="ot">&lt;-</span> <span class="fu">glm</span>(cardio <span class="sc">~</span> age_years <span class="sc">+</span> gender <span class="sc">+</span> cholesterol <span class="sc">+</span> gluc <span class="sc">+</span> smoke </span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>                      <span class="sc">+</span> alco <span class="sc">+</span> active <span class="sc">+</span> bmi <span class="sc">+</span> </span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>                        Family.history.of.cardiovascular.disease <span class="sc">+</span></span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>                        Diabetes.Mellitus,</span>
+<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>                      <span class="at">data =</span> data, <span class="at">family =</span> <span class="st">"binomial"</span>)</span>
+<span id="cb60-7"><a href="#cb60-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-8"><a href="#cb60-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Linear regression for continuous outcomes (example)</span></span>
+<span id="cb60-9"><a href="#cb60-9" aria-hidden="true" tabindex="-1"></a>linear_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(bmi <span class="sc">~</span> age_years, <span class="at">data =</span> data)</span>
+<span id="cb60-10"><a href="#cb60-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(linear_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = bmi ~ age_years, data = data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-24.510  -3.666  -1.152   2.641 271.143 
+
+Coefficients:
+             Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 23.477301   0.180860  129.81   &lt;2e-16 ***
+age_years    0.076352   0.003396   22.48   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 6.004 on 68203 degrees of freedom
+Multiple R-squared:  0.007357,  Adjusted R-squared:  0.007342 
+F-statistic: 505.5 on 1 and 68203 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+</section>
+<section id="g.-additional-analyses" class="level1">
+<h1>3 g. Additional Analyses</h1>
+<p>Depending on your course content, you may need additional analyses like ANOVA, chi-squared tests, or correlation coefficients. Here’s an example of each.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Chi-squared test for categorical data</span></span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>chisq_test <span class="ot">&lt;-</span> <span class="fu">chisq.test</span>(<span class="fu">table</span>(data<span class="sc">$</span>gender, data<span class="sc">$</span>cardio))</span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(chisq_test)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test with Yates' continuity correction
+
+data:  table(data$gender, data$cardio)
+X-squared = 2.5103, df = 1, p-value = 0.1131</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ANOVA to compare means among groups (example)</span></span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>anova_result <span class="ot">&lt;-</span> <span class="fu">aov</span>(bmi <span class="sc">~</span> gender, <span class="at">data =</span> data)</span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(anova_result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>               Df  Sum Sq Mean Sq F value Pr(&gt;F)    
+gender          1   23073   23073   641.2 &lt;2e-16 ***
+Residuals   68203 2454006      36                   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Correlation coefficient for numeric variables</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>correlation_result <span class="ot">&lt;-</span> <span class="fu">cor</span>(data<span class="sc">$</span>age_years, data<span class="sc">$</span>bmi)</span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(correlation_result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.08577104</code></pre>
+</div>
+</div>
+<p>This methodology outline provides a structured approach to descriptive statistics, data visualizations, statistical tests, and modeling. Depending on your analysis’s specific needs, you can adjust and expand these examples to fit your project. The R code snippets offer practical ways to gather the necessary insights and present them in a meaningful way.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
